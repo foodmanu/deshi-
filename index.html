@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>desi masala</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to right,#000000,#1f1f1f,#3a3a3a);
+    color:white;
+}
+body{
+    margin:0;
+}
+
+.header1{
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+}
+
+.header1 img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+
+
+
+
+.header{
+    width:100%;
+    height:100px;     /* slim banner */
+    overflow:hidden;
+}
+
+.header img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+
+
+
+
+.chili-img{
+    width:80px;
+    height:auto;
+}
+
+.text{
+    display:flex;
+    flex-direction:column;
+}
+
+.brand{
+    font-size:38px;
+    font-weight:800;
+    white-space: nowrap;   /* 🔥 line break band karega */
+}
+
+.paper{ color:#ff0000; }
+.salt{ color:#3ecf5e; }
+
+.restaurant{
+    font-size:20px;
+    color:#ff2b2b;
+    font-weight:600;
+}
+
+
+
+/* VIDEO */
+video{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display: block;
+}
+
+/* REVIEW */
+.review-section{
+    text-align:center;
+    padding:20px 15px;   /* height kam kar diya */
+    background:#111;
+}
+
+.review-section a{
+    display:inline-block;
+    padding:10px 25px;
+    background:#ff3c00;
+    color:white;
+    text-decoration:none;
+    border-radius:4px;
+    margin-top:10px;
+}
+
+
+/* MENU */
+.menu-section{
+    padding:20px;
+}
+
+.menu-title{
+    text-align:center;
+    font-size:22px;
+    margin:20px 0;
+    color:#ff3c00;
+    position:relative;
+    z-index:2;
+}
+
+
+.accordion{
+    background:#111;
+    color:white;
+    cursor:pointer;
+    padding:12px;
+    width:100%;
+    border:none;
+    text-align:left;
+    font-size:16px;
+    margin-top:10px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.accordion:hover{
+    background:#ff3c00;
+}
+
+.panel{
+    max-height:0;
+    overflow:hidden;
+    background:white;
+    color:black;
+    transition:max-height 0.4s ease;
+    border-radius:0 0 6px 6px;
+}
+
+.panel p{
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:5px;
+}
+
+.panel span{
+    font-weight:600;
+    color:#ff3c00;
+}
+
+
+
+.insta-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+background:#000000;
+color:#fff;
+padding:40px 20px;
+font-family:Arial;
+}
+
+.footer-content{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+max-width:1200px;
+margin:auto;
+}
+
+.footer-box{
+width:250px;
+margin:15px;
+}
+
+.footer-box h4{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.footer-box p{
+font-size:14px;
+color:#ccc;
+}
+
+.footer-box a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin:6px 0;
+font-size:14px;
+}
+
+.footer-box a:hover{
+color:#fff;
+}
+
+.partner-section{
+margin-top:10px;
+font-size:13px;
+color:#aaa;
+}
+
+.social-icons{
+margin-top:10px;
+}
+
+.social-icons a{
+color:#fff;
+margin-right:10px;
+font-size:18px;
+text-decoration:none;
+}
+
+.social-icons a:hover{
+color:#f39c12;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:30px;
+border-top:1px solid #333;
+padding-top:15px;
+font-size:13px;
+color:#aaa;
+}
+
+@media(max-width:768px){
+.footer-content{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+.footer-box{
+width:100%;
+}
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+
+
+<script>
+function openReview(){
+    window.location.href="https://search.google.com/local/writereview?placeid=0x39f49d83bf4b4183:0xff4a951987c8509e";
+}
+</script>
+
+
+
+<body>
+<div class="header">
+    <img src="chili-logo.png.svg" alt="header img">
+</div>
+
+
+<video autoplay controls width="100%">
+  <source src="welcome.mp4.mp4" type="video/mp4">
+</video>
+
+<div class="review-section">
+    <h2>⭐desi masala⭐</h2>
+    
+    <p>We value your feedback on Google Maps</p>
+    
+    <a href="https://maps.app.goo.gl/f89Ys5cj4wNJLbGV6" target="_blank" class="review-btn">
+        ⭐ Write a 5-Star Review
+    </a>
+
+    <a href="https://instagram.com/desi_masala_restaurant_" target="_blank" class="insta-link">
+        <i class="fab fa-instagram"></i> Follow on Instagram
+    </a>
+</div>
+
+
+ <div class="header1">
+    <img src="hider-logo.png.svg" alt="Restaurant Header">
+</div>
+
+
+<div class="menu-title">Taste the Best – Our Special Menu 🟢</div>
+
+
+
+<button class="accordion">🍳 Breakfast</button>
+<div class="panel">
+<p>Bread slice (plain) <span>₹49</span></p>
+<p>Butter toast (with jam) <span>₹69</span></p>
+<p>Veg sandwich with corn <span>₹99</span></p>
+<p>Cheese sandwich <span>₹109</span></p>
+<p>Aloo paratha with curd (2pcs) <span>₹149</span></p>
+<p>Plain paratha with curd (2pcs) <span>₹109</span></p>
+<p>Paneer cheese grilled sandwich <span>₹119</span></p>
+<p>Poha (1 plate) <span>₹69</span></p>
+<p>Chola bhatura <span>₹119</span></p>
+<p>Puri sabji (4pcs) <span>₹89</span></p>
+</div>
+<button class="accordion">🥡 Chinese Starter</button>
+<div class="panel">
+<p>Veg crispy <span>₹169</span></p>
+<p>Baby corn chilli <span>₹219</span></p>
+<p>Baby corn crispy <span>₹229</span></p>
+<p>Mushroom chilli <span>₹239</span></p>
+<p>Veg Manchurian (dry & gravy) <span>₹199</span></p>
+<p>Potato chilli (dry & gravy) <span>₹169</span></p>
+<p>Paneer chilli (dry & gravy) <span>₹229</span></p>
+<p>Paneer 65 <span>₹249</span></p>
+</div>
+
+<button class="accordion">🥟 Momos</button>
+<div class="panel">
+<p>Steam veg momos <span>₹119</span></p>
+<p>Veg fried momos <span>₹129</span></p>
+<p>Steam paneer momos <span>₹149</span></p>
+<p>Fried paneer momos <span>₹159</span></p>
+<p>Veg gravy momos <span>₹149</span></p>
+<p>Paneer gravy momos <span>₹169</span></p>
+</div>
+<button class="accordion">🥤 Beverage & Mocktail</button>
+<div class="panel">
+<p>Water <span>₹20</span></p>
+<p>Hot kesar milk <span>₹89</span></p>
+<p>Butter milk <span>₹59</span></p>
+<p>Sweet lassi <span>₹69</span></p>
+<p>Salt lassi <span>₹69</span></p>
+<p>Hot coffee <span>₹49</span></p>
+<p>Chai / Tea <span>₹29</span></p>
+<p>Cold coffee <span>₹99</span></p>
+<p>Cold coffee with ice-cream <span>₹119</span></p>
+<p>Mojito <span>₹69</span></p>
+<p>Blue Lagoon <span>₹89</span></p>
+<p>Masala soda <span>₹69</span></p>
+<p>Fresh lime soda <span>₹89</span></p>
+<p>Milk shake <span>₹119</span></p>
+<p>Milk shake with ice-cream <span>₹139</span></p>
+<p>Lemon ice tea <span>₹109</span></p>
+<p>Fruit punch <span>₹129</span></p>
+<p>Cold drink <span>₹29</span></p>
+<p>Masala cold drink <span>₹59</span></p>
+<p>Chocolate shake <span>₹119</span></p>
+</div>
+<button class="accordion">🍜 Noodles</button>
+<div class="panel">
+<p>Veg chowmin <span>₹139</span></p>
+<p>Schezwan chowmin <span>₹159</span></p>
+<p>Mix veg chowmin <span>₹179</span></p>
+<p>Veg hakka noodles <span>₹159</span></p>
+<p>Chilli garlic noodles <span>₹199</span></p>
+<p>Schezwan hakka noodles <span>₹199</span></p>
+<p>Mix hakka noodles <span>₹209</span></p>
+<p>Five spice noodles <span>₹199</span></p>
+<p>Young chow noodles <span>₹189</span></p>
+<p>Paneer noodles <span>₹189</span></p>
+</div>
+<button class="accordion">🍜 Maggie</button>
+<div class="panel">
+<p>Plain Maggie <span>₹69</span></p>
+<p>Plain cheese Maggie <span>₹89</span></p>
+<p>Cheese Schezwan Maggie <span>₹99</span></p>
+<p>Veggie Maggie <span>₹99</span></p>
+<p>Veggie butter Maggie <span>₹109</span></p>
+<p>Veggie cheese butter Maggie <span>₹129</span></p>
+<p>Corn Maggie <span>₹109</span></p>
+<p>Corn cheese Maggie <span>₹129</span></p>
+</div>
+<button class="accordion">🍟 Snacks (Pakoda)</button>
+<div class="panel">
+<p>Veg cutlet <span>₹139</span></p>
+<p>Veg pakoda (8pcs) <span>₹129</span></p>
+<p>Pyazi <span>₹149</span></p>
+<p>Paneer pakoda <span>₹139</span></p>
+</div>
+
+<button class="accordion">🍨 Ice Cream</button>
+<div class="panel">
+<p>Two in one <span>₹69</span></p>
+<p>Butter scotch <span>₹59</span></p>
+<p>Chocolate <span>₹59</span></p>
+<p>Vanilla <span>₹49</span></p>
+<p>Butter scotch cone <span>₹--</span></p>
+<p>Chocolate cone <span>₹--</span></p>
+<p>Choco vanilla stick <span>₹--</span></p>
+<p>Strawberry <span>₹--</span></p>
+<p>Matka kulfi <span>₹--</span></p>
+<p>Raj bhog kulfi <span>₹--</span></p>
+<p>Chocobar <span>₹--</span></p>
+<p>Orange stick <span>₹--</span></p>
+<p>Mango stick <span>₹--</span></p>
+<p>Fruit & nuts stick <span>₹--</span></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurant Footer</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<!-- FOOTER -->
+<div class="footer">
+
+<div class="footer-content">
+
+<!-- LOGO -->
+<div class="footer-box">
+<img src="angwah-logo.png.png" alt="ANGWAH Logo" height="50">
+<p>Premium Multi Cuisine Restaurant</p>
+
+<div class="partner-section">
+<p>Official Water Partner</p>
+</div>
+</div>
+
+<!-- ADDRESS -->
+<div class="footer-box">
+<h4>📍 Address</h4>
+<p>Your Area, Your City, India</p>
+</div>
+
+<!-- CONTACT -->
+<div class="footer-box">
+<h4>📞 Contact</h4>
+
+<a href="tel:+918309203079">
+<i class="fa fa-phone"></i> +91 8309203079
+</a>
+
+<a href="https://wa.me/918309203079" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
+</a>
+
+<a href="mailto:support@angwah.com">
+<i class="fa fa-envelope"></i> support@angwah.in
+</a>
+
+<a href="https://www.angwah.com" target="_blank">
+<i class="fa fa-globe"></i> www.angwah.in
+</a>
+
+</div>
+
+<!-- SOCIAL -->
+<div class="footer-box">
+<h4>Follow Us</h4>
+
+<div class="social-icons">
+
+<a href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://wa.me/918309203079">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 ANGWAH | All Rights Reserved
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
